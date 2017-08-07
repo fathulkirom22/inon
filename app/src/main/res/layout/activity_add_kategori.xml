@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.bahwell.inoncharge.activity.AddKategoriActivity">
+
+    <ScrollView
+        android:id="@+id/add_kategori_scrool"
+        android:layout_width="368dp"
+        android:background="@color/white"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:id="@+id/add_kategori"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="@dimen/logo_w_h"
+                android:layout_height="@dimen/logo_w_h"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:src="@mipmap/ic_launcher_inon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Choose Kategory" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+                <EditText
+                    android:id="@+id/price_hour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price/hour"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:fontFamily="Arial"
+                    android:singleLine="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_input"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/portofolio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:hint="Upload Your Portofolio"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="6dp"
+                    android:clickable="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/gportofoliokategori"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/editor_state"
+                    android:clickable="true"
+                    android:contentDescription="Edit image icon"
+                    android:padding="4dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_action_edit" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/send"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorAccent"
+                android:text="Send"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+</android.support.constraint.ConstraintLayout>

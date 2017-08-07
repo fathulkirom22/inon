@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#820e0e</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorAccentFix">#d3d3d3</color>
+    <color name="colorAccent">#707070</color>
+    <color name="colorAccentBac">#FF4081</color>
+    <color name="colorButtonCancel">#afafaf</color>
+    <color name="colorButtonAggre">#606060</color>
+    <color name="white">#F1F5F8</color>
+    <color name="darkgray">#808080</color>
+</resources>

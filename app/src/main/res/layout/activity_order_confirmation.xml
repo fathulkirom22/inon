@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:id="@+id/relativeLayout0"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:layout_alignParentStart="true">
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:background="#ffffff"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout0"
+        android:layout_alignParentStart="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photoProfil"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/photoProfil"
+            android:text="Nama Pelanggan :"
+            android:textSize="14dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/namaPelanggan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/photoProfil"
+            android:layout_below="@+id/txtDesc"
+            android:textColor="#555"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorAccentFix"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_below="@+id/relativeLayout0">
+        <TextView
+            android:id="@+id/txtDesc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="Biaya Total :"
+            android:textSize="14dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/biayaTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txtDesc3"
+            android:textColor="#555"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/relativeLayout"
+        android:gravity="center"
+        android:id="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/txtDesc15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Tipe Kerja :"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/txtDesc15"
+            android:textColor="#555"
+            android:gravity="center"
+            android:textSize="14dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="173dp"
+        android:layout_height="180dp"
+        android:background="@color/darkgray"
+        android:id="@+id/relativeLayout5"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txtDesc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Mulai :"
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtDesc6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtDesc5"
+            android:text="Pada Tanggal"
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tglMulai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtDesc6"
+            android:text=""
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtDesc8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tglMulai"
+            android:text="Pukul :"
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/jamMulai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_below="@+id/txtDesc8"
+            android:text=""
+            android:textSize="50dp"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="185dp"
+        android:layout_height="180dp"
+        android:background="@color/darkgray"
+        android:id="@+id/relativeLayout4"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/txtDesc10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Sampai :"
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtDesc11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtDesc10"
+            android:text="Pada Tanggal"
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tglSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtDesc11"
+            android:text=""
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtDesc13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tglSelesai"
+            android:text="Pukul :"
+            android:textSize="14dp"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/jamSampai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/txtDesc13"
+            android:text=""
+            android:textSize="50dp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="198dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/relativeLayout5">
+
+        <Button
+            android:id="@+id/reg_merchant_button1"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonCancel"
+            android:text="Tolak Pesanan"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="186dp"
+        android:layout_height="180dp"
+        android:id="@+id/relativeLayout6"
+        android:layout_below="@+id/relativeLayout5"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/reg_merchant_button2"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorButtonAggre"
+            android:text="Terima Pesanan"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

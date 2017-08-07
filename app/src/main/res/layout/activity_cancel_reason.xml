@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        tools:context="com.bahwell.inoncharge.activity.CancelReasonActivity"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/RL1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mengapa Anda Menolak Permintaan Dari Client !!! : "
+            android:textColor="#f00"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/CheckBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:padding="20dp"
+                android:text="@string/Sibuk"
+                android:textColor="#888"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/CheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:padding="20dp"
+                android:text="@string/AK"
+                android:textColor="#888"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/CheckBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:padding="20dp"
+                android:text="@string/JP"
+                android:textColor="#888"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/CheckBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:checked="false"
+                android:padding="20dp"
+                android:text="@string/LK"
+                android:textColor="#888"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/reg_merchant_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Konfirmasi Cancel"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

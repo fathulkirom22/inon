@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_action_home"
+            android:title="Home"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_discont"
+            android:icon="@drawable/ic_action_discount"
+            android:title="Discount" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_action_history"
+            android:title="History" />
+        <item
+            android:id="@+id/nav_portofolio"
+            android:icon="@drawable/ic_action_gallery"
+            android:enabled="false"
+            android:title="Portofolio" />
+        <item
+            android:id="@+id/nav_promotion"
+            android:icon="@drawable/ic_action_promo"
+            android:enabled="false"
+            android:title="Promotion" />
+        <item
+            android:id="@+id/nav_messeg"
+            android:enabled="false"
+            android:icon="@drawable/ic_action_messeg"
+            android:title="Messeger" />
+    </group>
+    <item
+        android:id="@+id/nav_more_item"
+        android:title="More">
+        <menu
+            android:title="More"
+            android:id="@+id/nav_more_menu">
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_action_about"
+                    android:title="About" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_add_kategori"
+        android:icon="@drawable/ic_action_add_kategori"
+        android:title="Add Kategory" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_action_logout"
+        android:title="Logout" />
+    <item
+        android:id="@+id/nav_upgrade_merchant"
+        android:icon="@drawable/upgrade_to_merchant"
+        android:title="Upgrade Merchant" />
+</menu>
